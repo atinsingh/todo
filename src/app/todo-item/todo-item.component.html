@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-3">
+    <div class="checkbox">
+             <input (click)="completeTask($event)" class="todo-item d-inline-block px-2" type="checkbox" [value]="task.id" />
+    </div>
+  </div>
+  <div class="col-9" [class]="task.active? 'active': 'in-active'" >
+    {{ task.text }}
+  </div>
+</div>
